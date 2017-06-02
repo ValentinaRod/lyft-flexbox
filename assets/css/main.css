@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+	background: linear-gradient(#76278f,#2B1E66);
 	font-family: 'Montserrat', sans-serif;
+}
+
+header {  /*todo mi encabezado inluye el nav y logotipo*/
+
+}
+
+.logotipo{
+
+}
+
+
+.nav {
+	display: flex; /*Establece un contenedor de ítems flexible en bloque, de forma equivalente a block.*/
+	
 }
