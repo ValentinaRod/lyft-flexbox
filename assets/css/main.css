@@ -1,22 +1,78 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
-	background: linear-gradient(#76278f,#2B1E66);
 	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(#76278f, #2B1E66);
 }
 
-header {  /*todo mi encabezado inluye el nav y logotipo*/
+/* menu header y menu*/
+img {
+    
+    width: 80px;
+    height: 57px;
+    margin-left: 80px;
+    margin-right: auto;
 
 }
 
-.logotipo{
+.flex-container {
 
-}
-
-
-.nav {
-	display: flex; /*Establece un contenedor de ítems flexible en bloque, de forma equivalente a block.*/
+	display: flex;
 	
+}
+ 
+#menu .flex-container{
+		justify-content: flex-end;
+		align-items: center;
+}
+
+#menu a {
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+
+}
+
+#menu a:hover{
+	background: #FF00BF;
+}
+
+.login{
+	border-radius: 10px;
+	border-color: white:
+}
+
+.imgfondo {
+	background-image: url('../img/img-lyft/encabezado.png');
+	background-repeat: no-repeat;
+	width: 1300px;
+	height: 630px;
+	position: relative;
+	bottom: 90px;
+	right: 20px;
+	z-index: -1;
+
+}
+/* Caja Blanca Formulario*/
+#titulo {
+	background: white;
+	background-attachment: fixed;
+	width: 34%;
+	height: 500px;
+	position:relative;
+	top: 80px; 
+	left: 892px;
+	margin: 0;
+	padding:0;
+}
+
+ h1{
+	font-size: 40px;
+	position:relative;
+	width:400px;
+	top: 50px;
+	bottom: 100px;
+	left: 35px;
+	color: #352384;
 }
