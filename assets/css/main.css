@@ -44,7 +44,7 @@ img {
 }
 
 .imgfondo {
-	background-image: url('../img/img-lyft/encabezado.png');
+	background-image: url('../img/img-lyft/encabezado1.jpg');
 	background-repeat: no-repeat;
 	width: 1300px;
 	height: 630px;
@@ -55,20 +55,23 @@ img {
 
 }
 /* Caja Blanca Formulario*/
+
+div {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
 #titulo {
 	background: white;
 	background-attachment: fixed;
-	width: 34%;
+	width: 45%;
 	height: 500px;
-	position:relative;
-	top: 80px; 
-	left: 892px;
-	margin: 0;
-	padding:0;
+	
 }
 
  h1{
-	font-size: 40px;
+	font-size: 20px;
 	position:relative;
 	width:400px;
 	top: 50px;
