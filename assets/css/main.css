@@ -5,78 +5,91 @@ body {
 }
 
 /* menu header y menu*/
-img {
-    
+img {  /*logo*/
     width: 80px;
     height: 57px;
-    margin-left: 80px;
-    margin-right: auto;
+ }
 
-}
-
-.flex-container {
-width: 90%;
-max-width: 1000px;
+.container {
+width: 100%;
 margin: auto;
 /*flexbox*/
 display: flex; /* para mover los elementos*/
 flex-direction: row; /* Permite la posicion de las cajas*/
 flex-wrap: wrap; /* Para q nos e desborde las cajas*/
+
 }
  
-header {
-	background: linear-gradient(#76278f,#2B1E66);
+header { /* elemento padre del logo tipo y menu nav*/
+background: linear-gradient(#76278f,#2B1E66);
 	width: 100%;
 	padding: 20px;
 	/*flex*/
-	display: flex ; /*Mover los elementos del contenedor padre*/
+	display: flex; /*Mover elemento padre*/
+	justify-content: space-between; /* Esto hace que el logo se vaya a la izquierda y el nav a la derecha*/
+	align-items: center; /*para centrar la linea de elementos nav*/
+	flex-direction: row; /*nos pone los elementos en linea*/
+	flex-wrap: wrap; /* evita que si elemento no cabe se deforme*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#menu .flex-container{
-		justify-content: flex-end;
-		align-items: center;
+header .logo img{   /*Logo  lyft*/
+	line-height: 50px;
+	position:relative;
+	left: 80px;
+	width: 70px;
+    height: 48px;
 }
 
-#menu a {
-	display: inline-block;
-	padding: 20px;
-	text-decoration: none;
-	color: white;
+header nav {  /*menu*/
+	
+	/*Flex*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+header nav a{
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ padding: 10px;
+ flex-grow: 1; /* me pone los elementos al 100% del contenedor*/
 
 }
 
-#menu a:hover{
+header nav a:hover{
 	background: #FF00BF;
 }
 
-.login{
+#Sign a:hover{
 	border-radius: 10px;
-	border-color: white:
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 div .imgfondo {
 	background-image: url('../img/img-lyft/encabezado1.jpg');
@@ -85,6 +98,26 @@ div .imgfondo {
 	
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Caja Blanca Formulario
 
 div {
