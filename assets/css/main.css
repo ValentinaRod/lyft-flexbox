@@ -81,7 +81,7 @@ section {
 section aside {   /*caja blanca*/
 	background: white;
 	width: 340px;
-	height: 500px;
+	height: 455px;
 	position: relative;
 	left: 948px;
 	bottom: 0px;
@@ -96,24 +96,63 @@ section aside {   /*caja blanca*/
 	
  }
 
-#titulo {
+#titulo {   /* Sign UP to DRIVE...*/
 	color:  #352384;
 	font-size: 28px;
+	position:relative;
+	bottom: 20px;
+
 }
 
 
 
 label {
 	color: #352384;
+position:relative;
+	bottom: 40px;
+font-weight: bold;
 }
 
+button {
+	background: #FF00BF;
+	text-decoration: none;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	position: relative;
+	top: 20px;
+	left: -3px;
+	height: 43px;
+	width: 123px;
+	}
 
+aside a {
+	font-size: 13px;
+	color: #352384;
+	position:relative;
+	top: 21px;
+	left:13px;
+}
 
+h2{
+	font-size: 10px;
+	position:relative;
+	top:45px;
+	color: #352384;
+}
 
+h3{
+	font-size: 10px;
+	position:relative;
+	top:23px;
+	color: #352384;
+}
 
+input {
+	border:none;
+	background-color: white;
 
-
-
+}
 
 
 
