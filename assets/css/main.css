@@ -1,5 +1,4 @@
 
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: linear-gradient(#76278f, #2B1E66);
@@ -16,12 +15,48 @@ img {
 }
 
 .flex-container {
-
-	display: flex;
-	
+width: 90%;
+max-width: 1000px;
+margin: auto;
+/*flexbox*/
+display: flex; /* para mover los elementos*/
+flex-direction: row; /* Permite la posicion de las cajas*/
+flex-wrap: wrap; /* Para q nos e desborde las cajas*/
 }
  
-#menu .flex-container{
+header {
+	background: linear-gradient(#76278f,#2B1E66);
+	width: 100%;
+	padding: 20px;
+	/*flex*/
+	display: flex ; /*Mover los elementos del contenedor padre*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#menu .flex-container{
 		justify-content: flex-end;
 		align-items: center;
 }
@@ -43,18 +78,14 @@ img {
 	border-color: white:
 }
 
-.imgfondo {
+div .imgfondo {
 	background-image: url('../img/img-lyft/encabezado1.jpg');
 	background-repeat: no-repeat;
-	width: 1300px;
-	height: 630px;
-	position: relative;
-	bottom: 90px;
-	right: 20px;
-	z-index: -1;
+	
+	
 
 }
-/* Caja Blanca Formulario*/
+/* Caja Blanca Formulario
 
 div {
 	display: flex;
@@ -67,6 +98,8 @@ div {
 	background-attachment: fixed;
 	width: 45%;
 	height: 500px;
+	align-self: flex-end;
+	order: 1;
 	
 }
 
@@ -78,4 +111,6 @@ div {
 	bottom: 100px;
 	left: 35px;
 	color: #352384;
-}
+}                     
+
+*/
