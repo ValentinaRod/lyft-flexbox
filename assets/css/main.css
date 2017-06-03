@@ -1,7 +1,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: linear-gradient(#76278f, #2B1E66);
+	margin: 0;
 }
 
 /* menu header y menu*/
@@ -21,7 +21,7 @@ flex-wrap: wrap; /* Para q nos e desborde las cajas*/
 }
  
 header { /* elemento padre del logo tipo y menu nav*/
-background: linear-gradient(#76278f,#2B1E66);
+/*background: url('../img/img-lyft/encabezado1.jpg');*/
 	width: 100%;
 	padding: 20px;
 	/*flex*/
@@ -41,14 +41,16 @@ header .logo img{   /*Logo  lyft*/
 }
 
 header nav {  /*menu*/
-	
+
 	/*Flex*/
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	margin-right: 50px;  /*me corre un poco la linea nav*/
 }
 
 header nav a{
+ 
  color: white;
  text-align: center;
  text-decoration: none;
@@ -66,38 +68,63 @@ header nav a:hover{
 
 }
 
+/* SECCION FORMULARIO */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div .imgfondo {
-	background-image: url('../img/img-lyft/encabezado1.jpg');
+section {
+	background: url('../img/img-lyft/encabezado1.jpg');
 	background-repeat: no-repeat;
-	
-	
-
+	background-size: 1366px;
+	width: 1366px;
+	height: 768px;
 }
+
+section aside {   /*caja blanca*/
+	background: white;
+	width: 340px;
+	height: 500px;
+	position: relative;
+	left: 948px;
+	bottom: 0px;
+	
+	top: 15px;
+	padding: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+ }
+
+#titulo {
+	color:  #352384;
+	font-size: 28px;
+}
+
+
+
+label {
+	color: #352384;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
