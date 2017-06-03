@@ -6,22 +6,22 @@ body {
 
 /* menu header y menu*/
 img {  /*logo*/
-    width: 80px;
-    height: 57px;
- }
+	width: 80px;
+	height: 57px;
+}
 
 .container {
-width: 100%;
-margin: auto;
-/*flexbox*/
-display: flex; /* para mover los elementos*/
-flex-direction: row; /* Permite la posicion de las cajas*/
-flex-wrap: wrap; /* Para q nos e desborde las cajas*/
+	width: 100%;
+	margin: auto;
+	/*flexbox*/
+	display: flex; /* para mover los elementos*/
+	flex-direction: row; /* Permite la posicion de las cajas*/
+	flex-wrap: wrap; /* Para q nos e desborde las cajas*/
 
 }
- 
+
 header { /* elemento padre del logo tipo y menu nav*/
-/*background: url('../img/img-lyft/encabezado1.jpg');*/
+	/*background: url('../img/img-lyft/encabezado1.jpg');*/
 	width: 100%;
 	padding: 20px;
 	/*flex*/
@@ -37,7 +37,7 @@ header .logo img{   /*Logo  lyft*/
 	position:relative;
 	left: 80px;
 	width: 70px;
-    height: 48px;
+	height: 48px;
 }
 
 header nav {  /*menu*/
@@ -50,12 +50,12 @@ header nav {  /*menu*/
 }
 
 header nav a{
- 
- color: white;
- text-align: center;
- text-decoration: none;
- padding: 10px;
- flex-grow: 1; /* me pone los elementos al 100% del contenedor*/
+
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	flex-grow: 1; /* me pone los elementos al 100% del contenedor*/
 
 }
 
@@ -94,7 +94,7 @@ section aside {   /*caja blanca*/
 	flex-direction: column;
 	justify-content: flex-start;
 	
- }
+}
 
 #titulo {   /* Sign UP to DRIVE...*/
 	color:  #352384;
@@ -108,9 +108,9 @@ section aside {   /*caja blanca*/
 
 label {
 	color: #352384;
-position:relative;
+	position:relative;
 	bottom: 40px;
-font-weight: bold;
+	font-weight: bold;
 }
 
 button {
@@ -124,7 +124,7 @@ button {
 	left: -3px;
 	height: 43px;
 	width: 123px;
-	}
+}
 
 aside a {
 	font-size: 13px;
@@ -151,6 +151,32 @@ h3{
 input {
 	border:none;
 	background-color: white;
+
+}
+
+/* SECCION FOTO TELEFONO*/
+
+#container0 { /* background gradiente*/
+	background: linear-gradient(#76278F,#2B1E66);
+	border: none;
+	position:relative;
+	bottom: 25px;
+	color: white;
+display:flex;
+flex-direction: column; /* Permite la posicion de las cajas*/
+	flex-wrap: wrap;
+
+
+}
+
+.imgtelefono {
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: stretch;
+  
+	
+
 
 }
 
