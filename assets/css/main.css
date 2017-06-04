@@ -178,8 +178,8 @@ input {
 
 #varioscont {
 	display: flex;
-	flex-direction: column;
-	align-items: stretch;
+	flex-direction: column; /* me deja el texto en columnas de arriba hacia abajo*/
+	align-items: stretch; /* me lo dejo uno al lado del otro*/
 	position: relative;
 	left: 154px;
 	top: -45px;
@@ -218,6 +218,37 @@ p {
  span {
 	position:relative;
 	bottom:90px;
+}
+
+/*FOOTER*/
+
+footer {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	background: #333447;
+	width: 1366px;
+	height: 630px;
+	margin: auto;
+	position:relative;
+	bottom: 25px;
+}
+#columnas {
+	display:flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+
+footer img{
+	
+	width: 200px;
+	height: 100px;
 }
 
 
