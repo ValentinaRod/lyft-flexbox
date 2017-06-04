@@ -1,4 +1,6 @@
 
+
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -157,27 +159,36 @@ input {
 /* SECCION FOTO TELEFONO*/
 
 #container0 { /* background gradiente*/
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
 	background: linear-gradient(#76278F,#2B1E66);
 	border: none;
 	position:relative;
 	bottom: 25px;
 	color: white;
-display:flex;
-flex-direction: column; /* Permite la posicion de las cajas*/
-	flex-wrap: wrap;
+}
 
+#varioscont {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 
 }
 
-.imgtelefono {
 
-	display: flex;
-	justify-content: flex-end;
-	align-items: stretch;
-  
+img {
+display:flex;
+justify-content: flex-end;
+
+width: 700px;
+height: 500px;
 	
-
-
 }
 
 
