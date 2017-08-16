@@ -1,338 +1,301 @@
-
-
-
-body {
+body{
 	font-family: 'Montserrat', sans-serif;
-	margin: 0;
+}
+.video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
-/* menu header y menu*/
-img {  /*logo*/
-	width: 80px;
-	height: 57px;
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-bg {
+    height: 300%;
+    top: -100%;
+  }
 }
 
-.container {
-	width: 100%;
-	margin: auto;
-	/*flexbox*/
-	display: flex; /* para mover los elementos*/
-	flex-direction: row; /* Permite la posicion de las cajas*/
-	flex-wrap: wrap; /* Para q nos e desborde las cajas*/
-
+@media (max-aspect-ratio: 16/9) {
+  .video-bg {
+    width: 300%;
+    left: -100%;
+  }
 }
 
-header { /* elemento padre del logo tipo y menu nav*/
-	/*background: url('../img/img-lyft/encabezado1.jpg');*/
-	width: 100%;
-	padding: 20px;
-	/*flex*/
-	display: flex; /*Mover elemento padre*/
-	justify-content: space-between; /* Esto hace que el logo se vaya a la izquierda y el nav a la derecha*/
-	align-items: center; /*para centrar la linea de elementos nav*/
-	flex-direction: row; /*nos pone los elementos en linea*/
-	flex-wrap: wrap; /* evita que si elemento no cabe se deforme*/
+@media (max-width: 767px) {
+  .video {
+    background: url('../img-lyft/hero-video.mp4') center center / cover no-repeat;
+  }
+
+  .video-bg {
+    display: none;
+  }
 }
+ 
+  #top-logo{
+  	height:40px;
+  	width:50px;
+  }
+  nav{
+  	position:fixed;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	margin-right:0;
+  	margin-left: 0;
+  	width:100%;
+  }
+  .logo{
+  	margin-right:300px;
+  	margin-left:0px;
+  	margin-top:24px;
+  }
+  .menu{
+  	margin-left:0px;
+  }
+  .menu li{
+  	list-style: none;
+  	margin-top:30px;
+  }
+  .menu li a{
+  	text-decoration:none;
+  	padding:30px 30px;
+  	color:white;
+	cursor:pointer;
+  }
+  .menu.flex-container{
+  	display:flex;
+  	flex-direction:row;
+  	justify-content: space-around;
+  	padding-left:50px;
+  	padding-bottom:30px;
+  }
 
-header .logo img{   /*Logo  lyft*/
-	line-height: 50px;
-	position:relative;
-	top: 10px;
-	left: 80px;
-	width: 70px;
-	height: 48px;
+  #menu-login{
+  	border:1.5px solid white;
+  	padding-top:10px;
+  	padding-bottom:10px;
+  	padding-right:30px;
+  	padding-left: 30px;
+  	border-radius: 7px;
+  	text-align: center;
+  	;
+  }
+ .menu.active {
+    background: #fff;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+
 }
-
-header nav {  /*menu*/
-
-	/*Flex*/
+.menu.active a {
+	color:black;
+}
+ .menu .active #menu-login{
+  	border:1.5px solid black;
+  	padding-top:10px;
+  	padding-bottom:10px;
+  	padding-right:30px;
+  	padding-left: 30px;
+  	border-radius: 7px;
+  	text-align: center;
+  }
+  header{
+  	padding-top:10%;
+  	margin-left:60%;
+  	margin-right: 0px;
+  }
+ header #form{
+  	color:#352384;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-right: 50px;  /*me corre un poco la linea nav*/
-}
-
-header nav a{
-
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	padding: 10px;
-	flex-grow: 1; /* me pone los elementos al 100% del contenedor*/
-
-}
-
-header nav a:hover{
-	background: #FF00BF;
-}
-
-#Sign a:hover{
-	border-radius: 10px;
-
-}
-
-/* SECCION FORMULARIO */
-
-section {
-	background: url('../img/img-lyft/encabezado1.jpg');
-	background-repeat: no-repeat;
-	background-size: 1366px;
-	width: 1366px;
-	height: 768px;
-}
-
-section aside {   /*caja blanca*/
-	background: white;
-	width: 340px;
-	height: 455px;
-	position: relative;
-	left: 948px;
-	bottom: 0px;
-	
-	top: 15px;
-	padding: 40px;
-	
-	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: flex-start;
-	
-}
-
-#titulo {   /* Sign UP to DRIVE...*/
-	color:  #352384;
-	font-size: 28px;
-	position:relative;
-	bottom: 20px;
-
-}
-
-
-
-label {
-	color: #352384;
-	position:relative;
-	bottom: 40px;
-	font-weight: bold;
-}
-
-button {
-	background: #FF00BF;
-	text-decoration: none;
-	border-radius: 10px;
-	border: none;
-	color: white;
-	position: relative;
-	top: 20px;
-	left: -3px;
-	height: 43px;
-	width: 123px;
-}
-
-aside a {
-	font-size: 13px;
-	color: #352384;
-	position:relative;
-	top: 21px;
-	left:13px;
-}
-
-h2{
-	font-size: 10px;
-	position:relative;
-	top:45px;
-	color: #352384;
-}
-
-h3{
-	font-size: 10px;
-	position:relative;
-	top:23px;
-	color: #352384;
-}
-
-input {
-	border:none;
+	text-align:center;
+	width:80%;
 	background-color: white;
+	padding: 60px 22px 50px 80px;
+  }
+ #form h1{
+  	text-align: left;
+  	font-size: 38px;
+  	font-weight: bold;
+  }
+ #form h4{
+  	padding-top:6px;
+	text-align: left;
+	font-weight:bold;
+	font-size: 17px;
+	padding-bottom:10px;
+  }
 
-}
-
-/* SECCION FOTO TELEFONO*/
-
-#container0 { /* background gradiente*/
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	background: -webkit-linear-gradient(#76278F, #2B1E66);
-	background: -o-linear-gradient(#76278F, #2B1E66);
-	background: linear-gradient(#76278F, #2B1E66);
-	border: none;
-	position:relative;
-	bottom: 25px;
-	color: white;
-}
-
-#varioscont {
-	display: flex;
-	flex-direction: column; /* me deja el texto en columnas de arriba hacia abajo*/
-	align-items: stretch; /* me lo dejo uno al lado del otro*/
-	position: relative;
-	left: 154px;
-	top: -45px;
-}
-
-
-img {
+ #form input::placeholder{
+  	color:grey;
+  	font-size: 15px;
+  	font-family: 'Montserrat', sans-serif;
+  	padding-left: 10px;
+  	margin-top: 10px;
+  }
+ #form input{
+  	border: 0;
+  	outline: 0;
+  	background: transparent;
+  	border-bottom: 1.4px solid #7265A9;
+  	height:50px;
+  	width:85%;
+  	margin-right:10px;
+  }
+ #oculto{
+  	display: flex;
+  	flex-direction: column;
+  }
+#form-btn.flex-container{
 	display:flex;
-	justify-content: flex-end;
-	width: 700px;
-	height: 500px;
-	position:relative;
-	left: 150px;
-	bottom: 27px;
-	
+	margin-top: 40px;
+	padding-right: 100px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	font-size: 100%;
+}
+#form-btn a:last-child{
+	padding:15px 15px;
+	color:#A9B2C1;
+}
+#form-btn a:first-child {
+	text-decoration:none;
+	padding:15px 15px;
+	color: white;
+	background-color: #FF00BF;
+	border-radius: 8px;
+}
+#form-p{
+	color:#8D99AC;
+	font-size: 75%;
+	text-align:left;
+	margin-top:15px;
+}
+#form-p p{
+	margin-bottom: 10px;
 }
 
-h4 {
-	font-size: 25px;
-
-	
-}
-
-h5{
-	font-size: 25px;
-	position:relative;
-	bottom:75px;
-}
-
-p {
-	line-height: 1%;  /*quita interlineado*/
-	position:relative;
-	bottom: 20px;
-}
-
-span {
-	position:relative;
-	bottom:90px;
-}
-
-/*FOOTER*/
-
-footer {
+#info.flex-container{
+	margin-top:1%;
+	display:flex;
+	flex-direction: row;
 	justify-content: space-around;
-	flex-wrap: wrap;
-	
-	
-	background: #333447;
-	width: 1366px;
-	height: 630px;
-	margin: auto;
-	position:relative;
-	bottom: 25px;
+	padding:0px 50px 30px 30px;
 }
-#columnas {
+.info-img{
+	padding-left:18%;
+	padding-right: 15%;
+}
+.info-img img{
+	width:120%;
+	height:450px;
+}
+#info-text.flex-container{
+	margin-top:10%;
 	display:flex;
 	flex-direction: column;
-	align-items: center;
-	color: white;
+	align-content: center;
+	color:white;
+	padding-left:10%;
+	padding-right: 0;
+	padding-bottom: 20px;
+}
+#info div{
+	margin-top: 10%;
+}
+footer{
+	margin-top:80px;
+	background-color: #333447;
+	color:#FFFFFF;
+	padding:60px 0 90px 0;
+	height:400px;
+}
+footer h4{
+	font-size: 22px;
+}
+.superior.flex-container{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:0 250px 0 100px;
+	margin-bottom: 50px;
+}
+.log-in.flex-container{
+	display:flex;
+	flex-direction: row;
+}
+.get-it.flex-container{
+	margin-top: 6px;
+	display:flex;
+	flex-direction: column;
+}
+#apple{
+	width:130px;
+	height:90px;
+}
+#google{
+	width: 130px;
+	height: 40px;
+}
+#microsoft{
+	margin-top:25px;
+	width: 130px;
+	height:40px;
+}
+.superior ul{
+	list-style: none;
+}
+.superior ul li a{
 	text-decoration: none;
+	color:white;
+	padding-bottom: 10px;
+	font-size: 17px;
 }
-
-
-.col-1 {
-	display: flex;
+.inferior.flex-container{
+	padding:30px 250px 0 250px;
+	text-align: center;
+	display:flex;
 	flex-direction: column;
-	align-items: flex-start;
-	
+	justify-content: space-between;
 }
-
-.col-2 {
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	
-
-}
-
-.col-3 {
-	display: flex;
-	flex-direction: column;
-	align-items: ;
-}
-
-
-
-
-footer img{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-justify-content: flex-end;
-	justify-content: flex-end;
-	width: 200px;
-	height: 100px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Caja Blanca Formulario
-
-div {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-
-#titulo {
-	background: white;
-	background-attachment: fixed;
-	width: 45%;
-	height: 500px;
-	align-self: flex-end;
-	order: 1;
-	
-}
-
- h1{
+.social.flex-container a i{
+	text-decoration: none;
+	color:white;
+	border:1px solid white;
+	padding:9px;
+	border-radius: 20px;
 	font-size: 20px;
-	position:relative;
-	width:400px;
-	top: 50px;
-	bottom: 100px;
-	left: 35px;
-	color: #352384;
-}                     
-
-*/
+}
+.social.flex-container{
+	padding:0 250px 20px 250px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+footer p{
+	padding:40px 10px;
+}
+footer h4{
+	padding-bottom: 10px;
+}
+.login{
+	display:flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+footer div div ul li{
+	padding-top: 30px;
+}
